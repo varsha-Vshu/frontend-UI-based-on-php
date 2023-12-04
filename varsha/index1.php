@@ -1,0 +1,124 @@
+<?php 
+include("loginindex.php")
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online food delivery services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.google.com/specimen/Bree+Serif?query=bre" rel="stylesheet">
+    <link href="style.css" rel=" stylesheet">
+    <link  rel="stylesheet" type= "text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+
+</head>
+<body>
+            <!-- <img src="images6.jpeg" height="50x" width="50px" alt="online meals.com"> -->
+            <nav id="navbar">
+              <div id="logo">
+                  <img src="images6.jpeg" height="50x" width="50px" alt="online meals.com">
+              </div>
+              <ul>
+                  <li class="item"><a href="#home">Home</a></li>
+                  <li class="item"><a href="#services-container">Services</a></li>
+                  <li class="item"><a href="#About-us">About-us</a></li>
+                  <li class="item"><a href="/loginindex.php">login</a></li>
+              
+              
+                  <li class="item"><a href="/Signin.html">Signin</a></li>
+
+              </ul>
+          </nav>
+    <section id="Home">
+        <h1 class="h-primary">welcome to online services of food delivery</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+             Expedita rerum nihil quis, delectus earum perspiciatis recusandae, <br>
+             consequuntur inventore, sint dignissimos aperiam rem! <br>
+             Provident quod debitis nemo illum placeat. Optio, hic.</p>
+            
+             <a href="./loginindex.php"><button class="btn" action="loginindex.php" > book now</button></a>
+    </section>    
+<br>
+<section id="services-container">
+  <h1 class="h-primary center">Our Services</h1>
+  <div id="services">
+      <div class="box">
+          <img src="/images2.jpeg" alt="">
+          <h2 class="h-secondary center">Food Catering</h2>
+          <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et qui, repudiandae similique nam, recusandae quidem ab asperiores ex, aut fugit labore veritatis facere?
+              sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+              voluptas beatae facilis labore, omnis sint quae eum.</p>
+      </div>
+      <div class="box">
+        <img src="images4.jpeg" alt="">
+        <h2 class="h-secondary center">Bulk Ordering</h2>
+        <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium a incidunt animi ad, ab dignissimos vero? Unde numquam odit repudiandae perferendis nisi.
+
+            sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+            voluptas beatae facilis labore, omnis sint quae eum.</p>
+    </div>
+    <div class="box">
+        <img src="./images7.jpeg" alt="">
+        <h2 class="h-secondary center">Food Ordering</h2>
+        <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+            sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+            voluptas beatae facilis labore, omnis sint quae eum.</p>
+    </div>
+    </div>
+</section>
+ <br>
+ <section id="About-container" aria-autocomplete="">
+     <h1 class=" h-secondary center">About us</h1>
+       <p class="abt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis,<br>
+         cumque quam dicta explicabo consequuntur repudiandae sint quo quos alias<br> 
+        temporibus? Esse voluptate, nesciunt labore quia debitis consequuntur.<br>
+         Laudantium, at impedit.</p>
+        </section>
+      <br>  
+</main>
+<br>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">about -us</a></li><br>
+                    <li><a href="#">Our services</a></li><br>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col ">
+                <h4 text color="blue"> get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li><br>
+                    <li><a href="#">returns</a></li><br>
+                    <li><a href="#">contact-us</a></li>
+                 </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow-us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab linkedin"></i></a>
+                </div>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            </footer>
+            <footer>
+   <strong> <div class="center">
+        Copyright &copy; www.OnlineOrderServices.com. All rights reserved!
+    </div>
+    
+   </strong>
+    </footer>
+</body>
+</html>
