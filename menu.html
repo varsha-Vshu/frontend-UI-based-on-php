@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu & Booking</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    body { background-color: #f8f9fa; padding: 30px; }
+    .menu-table th, .menu-table td { text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="mb-4">Catering Menu</h2>
+    <form action="order-summary.php" method="POST" onsubmit="return calculateTotal();">
+
+      <table class="table table-bordered menu-table">
+        <thead class="thead-dark">
+          <tr>
+            <th>Item</th>
+            <th>Price (₹)</th>
+            <th>Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paneer Butter Masala</td>
+            <td>200</td>
+            <td><input type="number" name="paneer" value="0" min="0" class="form-control quantity" data-price="200"></td>
+          </tr>
+          <tr>
+            <td>Chicken Biryani</td>
+            <td>250</td>
+            <td><input type="number" name="biryani" value="0" min="0" class="form-control quantity" data-price="250"></td>
+          </tr>
+          <tr>
+            <td>Veg Pulao</td>
+            <td>150</td>
+            <td><input type="number" name="pulao" value="0" min="0" class="form-control quantity" data-price="150"></td>
+          </tr>
+          <tr>
+            <td>Gulab Jamun (per piece)</td>
+            <td>20</td>
+            <td><input type="number" name="jamun" value="0" min="0" class="form-control quantity" data-price="20"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4>Total: ₹<span id="totalPrice">0</span></h4>
+      <input type="hidden" name="total" id="totalInput">
+
+      <div class="form-group mt-4">
+        <label>Your Name:</label>
+        <input type="text" name="customer_name" class="form-control" required>
+      </div>
+
+      <button type="submit" class="btn btn-success">Confirm Booking</button>
+    </form>
+  </div>
+
+  <script>
+    function calculateTotal() {
+      let total = 0;
+      document.querySelectorAll('.quantity').forEach(input => {
+        const price = parseFloat(input.dataset.price);
+        const quantity = parseInt(input.value) || 0;
+        total += price * quantity;
+      });
+
+      document.getElementById('totalPrice').innerText = total;
+      document.getElementById('totalInput').value = total;
+      return true;
+    }
+
+    // Auto update total on input change
+    document.querySelectorAll('.quantity').forEach(input => {
+      input.addEventListener('input', calculateTotal);
+    });
+  </script>
+</body>
+</html>
